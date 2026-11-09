@@ -1,0 +1,42 @@
+{
+  "name": "@varypilot/sdk-node",
+  "version": "0.1.0",
+  "description": "Varypilot Node.js SDK for stable A/B assignments, shared configuration caching and consent-aware events",
+  "type": "module",
+  "license": "UNLICENSED",
+  "homepage": "https://docs.varypilot.com/node-sdk",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/privatar/varypilot-sdk-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/privatar/varypilot-sdk-node/issues"
+  },
+  "keywords": [
+    "varypilot",
+    "ab-testing",
+    "experimentation",
+    "node-sdk"
+  ],
+  "engines": {
+    "node": ">=20.19.0"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "dependencies": {
+    "zod": "4.6.7",
+    "@noble/hashes": "2.4.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  }
+}
